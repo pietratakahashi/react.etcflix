@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Menu from './components/Menu';
+import BannerMain from './components/BannerMain'
+import Footer from './components/Footer';
+import Carousel from './components/Carousel/index';
+import data from './components/data/dados_iniciais.json';
+
+const firstCategory = data.categorias[0]; 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ backgroundColor: '#141414'}}>
+      <Menu buttonLabel="Novo Vídeo" />
+      <BannerMain
+        videoTitle={firstCategory.titulo}
+        videoDescription={firstCategory.videos[0].titulo}
+        url={firstCategory.videos[0].titulo}
+      />
+      {data.categorias.map((categoria, indice) => <Carousel key={indice} category={categoria} />)}
+      <Footer />
     </div>
   );
 }
