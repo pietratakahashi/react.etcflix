@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ea2f0e60ce3b66e2db5b021cb28d6154",
+    "revision": "b0d0b585d815634c29106d0e0c785ad0",
     "url": "/react.etcflix/index.html"
   },
   {
-    "revision": "8af7668312e1e2527695",
+    "revision": "134cb96d20ab17c0e358",
     "url": "/react.etcflix/static/css/main.013b23aa.chunk.css"
   },
   {
-    "revision": "f5a8030ffdebe1e0ee6d",
-    "url": "/react.etcflix/static/js/2.46d8bf05.chunk.js"
+    "revision": "1db03bb9f24e38bec503",
+    "url": "/react.etcflix/static/js/2.95eb2df0.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/react.etcflix/static/js/2.46d8bf05.chunk.js.LICENSE.txt"
+    "url": "/react.etcflix/static/js/2.95eb2df0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8af7668312e1e2527695",
-    "url": "/react.etcflix/static/js/main.e9c05d5b.chunk.js"
+    "revision": "134cb96d20ab17c0e358",
+    "url": "/react.etcflix/static/js/main.ef7a241e.chunk.js"
   },
   {
     "revision": "18d829b2f0714fad830b",
