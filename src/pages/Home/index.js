@@ -1,15 +1,15 @@
 import React from 'react';
 import Menu from '../../components/Menu';
-import BannerMain from '../../components/BannerMain'
+import BannerMain from '../../components/BannerMain';
 import Footer from '../../components/Footer';
 import Carousel from '../../components/Carousel';
 import data from '../../components/data/dados_iniciais.json';
 
-const firstCategory = data.categorias[0]; 
+const firstCategory = data.categorias[0];
 
 function Home() {
   return (
-    <div style={{ backgroundColor: '#141414'}}>
+    <div style={{ backgroundColor: '#141414' }}>
       <Menu buttonLabel="Novo Vídeo" />
       <BannerMain
         videoTitle={firstCategory.titulo}
