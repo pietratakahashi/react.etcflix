@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import SlickSlider from 'react-slick';
 import styled from 'styled-components';
@@ -5,6 +6,12 @@ import styled from 'styled-components';
 const Container = styled.ul`
   padding: 0;
   margin: 0;
+  overflow: hidden;
+
+  .slick-track {
+    display: flex;
+  }
+
   .slick-prev,
   .slick-next {
     z-index: 50;

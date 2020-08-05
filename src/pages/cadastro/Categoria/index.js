@@ -22,32 +22,20 @@ function CadastroCategoria() {
     });
   }
 
-  function handleChange(infoDoEvento) {
-    const { getAttribute, value } = infoDoEvento.target;
-    setValue(
-      getAttribute('name'),
-      value,
-    );
+  function handleChange(e) {
+    const { name, value } = e.target;
+    setValue(name, value);
   }
 
   useEffect(() => {
-    setTimeout(() => {
-      setCategorias([
-        ...categorias,
-        {
-          id: 1,
-          nome: 'Front End',
-          descricao: 'categoria aleatoria',
-          cor: '#6bdf11',
-        },
-        {
-          id: 2,
-          nome: 'Back End',
-          descricao: 'segunda categoria aleatoria',
-          cor: '#6bdf11',
-        },
-      ]);
-    }, 4 * 1000);
+    const URL_TOP = 'http://localhost:8080/categorias';
+    fetch(URL_TOP)
+      .then(async (respostaDoServidor) => {
+        const resposta = await respostaDoServidor.json();
+        setCategorias([
+          ...resposta,
+        ]);
+      });
   }, []);
 
   return (

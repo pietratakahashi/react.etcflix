@@ -52,7 +52,7 @@ const Input = styled.input`
   transition: border-color .3s;
   
   &:focus {
-    border-bottom-color: var(--primary);
+    border-bottom-color: var(--white);
   }
   &:focus:not([type="color"]) + span {
     transform: scale(.6) translateY(-10px);

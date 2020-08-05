@@ -24,7 +24,7 @@
     padding-right: 5%;
   
     background: var(--black);
-    border-bottom: 2px solid var(--primary);
+    border-bottom: 2px solid var(--white);
   }
   body {
     --bodyPaddingTop: 94px;
@@ -47,7 +47,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: var(--primary);
+      background: var(--white);
       border-radius: 0;
       border: 0;
       text-align: center;

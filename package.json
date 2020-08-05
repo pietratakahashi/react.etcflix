@@ -15,12 +15,11 @@
     "react-slick": "^0.27.1",
     "styled-components": "^5.1.1"
   },
-  "homepage": "https://honmapietra.github.io/react.etcflix/",
   "scripts": {
     "server": "json-server --watch db.json --port 8080",
     "dev": "concurrently \"react-scripts start\" \"npm run server\"",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env PUBLIC_URL=/react.etcflix/ react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
@@ -44,6 +43,7 @@
   },
   "devDependencies": {
     "concurrently": "^5.2.0",
+    "cross-env": "^7.0.2",
     "eslint": "^6.6.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-plugin-import": "^2.22.0",
