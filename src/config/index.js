@@ -1,1 +1,0 @@
-export URL_BACKEND_TOP = '';

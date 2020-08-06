@@ -48,6 +48,7 @@
       right: 0;
       bottom: 0;
       background: var(--white);
+      color: var(--black);
       border-radius: 0;
       border: 0;
       text-align: center;
